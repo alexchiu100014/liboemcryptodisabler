@@ -1,6 +1,7 @@
 id=liboemcryptodisabler
 name=liboemcrypto disabler
-version=v1.5
+version=v1.5.1
 versionCode=15
-author=ianmacd
+author=ianmacd, modded by hzy132
 description=Disables liboemcrypto.so on rooted devices to allow DRM-protected content to play (e.g. Netflix, My5, etc.).
+updateJson=https://raw.githubusercontent.com/hzy132/liboemcryptodisabler/master/updateJson
