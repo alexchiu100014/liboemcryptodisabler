@@ -1,4 +1,3 @@
-
 ui_print "*******************************"
 ui_print "   liboemcrypto.so disabler    "
 ui_print "*******************************"
@@ -13,8 +12,8 @@ then
 	ui_print ''
 fi
 
-
-for part in system vendor
+# Add 'odm' partition to the search
+for part in system vendor odm
 do
 	for libdir in lib lib64
 	do
@@ -26,6 +25,9 @@ do
 			if [ $part = vendor ]
 			then
 				instdir=system/vendor
+			elif [ $part = odm ]
+			then
+				instdir=system/odm
 			else
 				instdir=system
 			fi
@@ -34,4 +36,3 @@ do
 		fi
 	done
 done
-
